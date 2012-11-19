@@ -1,0 +1,173 @@
+<resources>
+
+  <!-- for the manifest! -->
+  <string name="app_name">"阿拉貢"</string>
+  <string name="app_version_name">"1.1.3"</string>
+  <string name="webpage">"http://www.phys.hawaii.edu/〜kcroker /阿拉貢"</string>
+
+  <!-- For the primary menu -->
+  <string name="menu_add">"增加"</string>
+  <string name="menu_options">"設定"</string>
+  <string name="menu_track">"追時"</string>
+  <string name="menu_pause">"暫停"</string>
+  <string name="menu_reset">"重新所有計時器"</string>
+  <string name="menu_export">"導出"</string>
+
+  <!-- For the context menu -->
+  <string name="reposition">"換單子位"</string>
+  <string name="transfer">"修改追的時間"</string>
+  <string name="graph">"圖形"</string>
+  <string name="edit">"修改"</string>
+  <string name="delete">"刪除"</string>
+  <string name="clear">"重新"</string>
+
+  <!-- For the individual endeavors -->
+  <string name="start">"開始/停止："</string>
+  <string name="duration">"經過時間："</string>
+  <string name="untitled_endeavor">"- 新追時活度 -"</string>
+
+  <!-- For tracking -->
+  <string name="tracked">"追踪"</string>
+  <string name="untracked">"沒追踪"</string>
+
+  <!-- For the edit popup -->
+  <string name="edit_endeavor_popup">"修改追時"</string>
+  <string name="edit_endeavor_ok">"確認"</string>
+  <string name="edit_endeavor_cancel">"取消"</string>
+
+  <string name="edit_endeavor_name">"目標標題："</string>
+  <string name="edit_endeavor_goal">"目標時間："</string>
+  
+  <string name="edit_endeavor_hours">"小時"</string>
+  <string name="edit_endeavor_minutes">"分鐘"</string>
+  <string name="edit_endeavor_seconds">"秒鐘"</string>
+  
+  <string name="edit_endeavor_repeat">"週期："</string>
+  <!-- for the stupid picker -->
+  <string name="increment">"+"</string>
+  <string name="decrement">"-"</string>
+
+  <!-- for reset -->
+  <string name="reset_verification">"忘記全部積時嗎？"</string>
+
+  <!-- for preferences -->
+  <string name="prefs_title">"亞拉岡設定"</string>
+  <string name="prefs_label_alarm">"目標完成"</string>
+  <string name="prefs_label_autotoggle">"自動切換閒置"</string>
+  <string name="prefs_label_verify_del">"刪除"</string>
+  <string name="prefs_label_verify_reset">"重置計數器"</string>
+  <string name="prefs_label_autotoggle_setidle">"將閒置的追時活度"</string>
+  <string name="prefs_label_tenths">"用高精度時間"</string>
+  <string name="prefs_label_export">"導出設定"</string>
+  <string name="prefs_label_dnd">"請勿打擾"</string>
+  <string name="prefs_label_totalprogress">"進度欄標題"</string>
+  <string name="prefs_label_recent">"最近的追時活度"</string>
+  <string name="prefs_label_keyguard">"禁用自動鍵盤鎖"</string>
+  <string name="prefs_label_toggle">"快速切換"</string>
+  <string name="prefs_label_grace">"寬限期"</string>
+  <string name="prefs_label_upgrade">"手動更新"</string>
+  <string name="prefs_label_webpage">"說明和幫助"</string>
+
+  <string name="prefs_header_autotoggle_choice">"選擇一個空閒的追時活度"</string>
+  <string name="prefs_header_behaviour">"行為設定"</string>
+  <string name="prefs_header_appearance">"外觀設定"</string>
+  <string name="prefs_header_verify">"驗證設定"</string>
+  <string name="prefs_header_export">"追蹤設定"</string>
+  <string name="prefs_header_appearence">"外觀"</string>
+  <string name="prefs_header_help">"幫助和更新"</string>
+
+  <string name="prefs_info_recent">"最近積極追時活度單有什麼長度（輸入〇會停用）"</string>
+  <string name="prefs_info_export">"阿拉貢出口數據設定"</string>
+  <string name="prefs_info_alarm">"完成下功夫後，發出通知"</string>
+  <string name="prefs_info_autotoggle">"當屏幕打開時，切換到空閒的下功夫。屏幕關閉再繼續，除非手動切換。"</string>
+  <string name="prefs_info_verify_del">"是否提示刪除"</string>
+  <string name="prefs_info_verify_reset">"阿拉貢提示復位請求"</string>
+  <string name="prefs_info_tenths">"高分辨率顯示器（十分之一秒）的計時器"</string>
+  <string name="prefs_info_dnd">"下功夫中，禁用所有的信號接收（使用飛機模式）"</string>
+  <string name="prefs_info_totalprogress">"顯示進度攔觀察你的下功夫努力"</string>
+  <string name="prefs_info_toggle">"點擊目的的下功夫，將切換到以前的下功夫"</string>
+  <string name="prefs_info_keyguard">"禁用鎖屏以提高訪問速度"</string>
+  <string name="prefs_info_grace">"自動把這個值一下的累計時間（妙）傳輸加上下一個選的下功夫"</string> 
+  <string name="prefs_info_upgrade">"點擊訪問阿拉貢的賣場頁面，可以手動更新阿拉貢"</string>
+  <string name="prefs_info_webpage">"點擊上阿拉貢的網頁，查看說明和幫助"</string>
+ 
+  <!-- export preferences -->
+  <string name="prefs_export_timepoint">"以追踪蓋章"</string>
+  <string name="prefs_info_export_timepoint">"按下下功夫按鈕，紀錄早的時間戳不如目前時間"</string>
+
+  <string name="prefs_export_filename">"與IDS名稱"</string>
+  <string name="prefs_info_export_filename">"導出到用先後順序編號數據的文件，而不是標記（用於批處理）"</string>
+  
+  <string name="prefs_export_namecolumn">"包括姓名"</string>
+  <string name="prefs_export_info_namecolumn">"包括一列的下功夫名稱（用於批處理）"</string>
+
+  <string name="prefs_export_globalstats">"全程序統計"</string>
+  <string name="prefs_export_info_globalstats">"保持與匯總統計的其他文件"</string>
+  
+  <!-- for various formatted messages -->
+  <string name="writingOut">"寫入文件..."</string>
+  <string name="yes">"是"</string>
+  <string name="no">"否"</string>
+  <string name="resetAborted">"復位中止"</string>
+  <string name="deleteAborted">"刪除被中止"</string>
+  <string name="questionMark">"\？"</string>
+  
+  <string name="default1">"學習科學"</string>
+  <string name="default2">"食物"</string>
+  <string name="default3">"上洗手間"</string>
+  <!-- the titles of the defaults are meant to be commands on basic usage -->
+  <string name="default4">"長按為了編輯"</string>
+  <string name="default5">"使用菜單添加"</string>
+  <string name="defaultsCreated">"空列表，默認創建了！"</string>
+  
+  <string name="neverPause">"阿拉貢不能停頓"</string>
+
+  <!-- for selecting new locations in the list, rearranging items in the list -->
+  <string name="repositionSelect">"選擇新的位置"</string>
+  <string name="repositionCancel">"重新定位取消了"</string>
+  <string name="repositionError1">"不能復位到一個最近的一節"</string>
+  <string name="transferSelect">"選擇收件者"</string>
+  <string name="transferError1">"沒時間轉移！"</string>
+  <string name="transferCancel">"調動取消了"</string>
+  <string name="transferError2">"不能重新分配成一個週期的下功夫"</string>
+  <string name="notImplemented">"尚未推出"</string>
+  <string name="transferSuccess">"再分配 %1$s"</string>
+
+  <string name="editErrorNoPeriod">"下功夫的週期必須有一個目標時間（一週期）"</string>
+  <string name="editCancel">"編輯取消"</string>
+
+  <string name="goalComplete">"%1$s 的目標成功了！"</string>
+  <string name="cycleComplete">"%1$2 個週期完成了"</string>
+  <string name="noteSelectNext">"點擊帶來阿拉貢到前景"</string>
+  
+  <!-- these are list section headings -->
+  <string name="headingRecents">"最近的下功夫"</string>
+  <string name="headingAll">"全部努力"</string>
+
+  <string name="detailUnstarted">"未開始的"</string>
+
+  <string name="qtSuccess">"快速切換到 $1%s 了"</string>
+  
+  <!-- read the preferences description of what I mean by gracing: like grace period -->
+  <string name="graceSuccess">"過去了 $1%d 秒了"</string>
+  
+  <!-- db strings-->
+  
+  <!-- include UI shit because grrrr -->
+  <string name="aragorn_table_create">"創建表的努力（ID的INTEGER PRIMARY KEY條件，名稱“文本為NOT NULL，INTEGER的目標，持續整數，布爾軌道，INTEGER的位置，擴大布爾，積極布爾，布爾重複）"</string>
+  <string name="stamps_table_create">"創建表的郵票（ID整數的PRIMARY KEY AUTOINCREMENT的，endeavor_id整數鍵，郵票的TIMESTAMP默認（CURRENT_TIMESTAMP））"</string>
+  <string name="state_table_create">"創建表的狀態（ID的INTEGER PRIMARY KEY條件，緩存時間戳，INTEGER的位置，以前的整數，積極整數）"</string>
+  <string name="recents_table_create">"創作表recents，（ID的INTEGER PRIMARY KEY，endeavor_id整數鍵）"</string>
+  <string name="db_fetch_endeavors">"選擇從位置升序*努力令"</string>
+  <!-- <string name="db_fetch_stamps">SELECT id, (strftime(\'%s\', stamp)*1000) AS stamp FROM stamps WHERE endeavor_id == ? ORDER BY id</string> -->
+  <string name="db_fetch_stamps">"SELECT ID，（的strftime（'％s'的郵票）* 1000）作為哪裡endeavor_id郵票郵票==？ ORDER BY郵票升序"</string>
+
+  <string name="aragorn_alter_repeat">"ALTER TABLE的努力，添加重複布爾"</string>
+  <string name="aragorn_alter_state">"ALTER TABLE的狀態，添加前面的整數"</string>
+  <string name="aragorn_alter_state2">"ALTER TABLE的狀態加積極的整數"</string>
+  
+  <!-- the readme file for tracking -->
+  <string name="tracking_readme">"阿拉貢V1.0  - 記錄的數據\n---------------------------- \n 製作這些文件隨著時間的推移，每次你按下主單上的『下功夫』，從當時的切換 『追踪』 下功夫。根據首選項，每一個下功夫的文件名是自下功夫的ID或輸入的名稱
+。此外，也有可能是一個全整體統計文件。此外，也有可能是一個全整體統計文件。每個文件的格式：（注：&lt;...&gt;代表了列始終存在，[...]代表一列可以選擇（看看設定）。列都是製表符分隔. \n\n行：\n  *個人的下功夫：&lt;UNIX 毫秒時戳&gt; &lt;下功夫時間長短&gt; &lt;目的時間長短&gt; [下功夫名稱] \n *全整體統計：未目的下功夫&gt; &lt;全部有目的下功夫&gt;&lt;總數目標時間&gt;"</string>
+
+</resources>

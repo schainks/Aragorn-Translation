@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- for the manifest! -->
+  <string name="app_name">Aragorn</string>
+  <string name="app_version_name">1.1.3</string>
+  <string name="webpage">http://www.phys.hawaii.edu/~kcroker/aragorn</string>
+
+  <!-- For the primary menu -->
+  <string name="menu_add">Add</string>
+  <string name="menu_options">Options</string>
+  <string name="menu_track">Track</string>
+  <string name="menu_pause">Pause</string>
+  <string name="menu_reset">Reset All</string>
+  <string name="menu_export">Export</string>
+
+  <!-- For the context menu -->
+  <string name="reposition">Reposition in list</string>
+  <string name="transfer">Reassign tracked time</string>
+  <string name="graph">Graph</string>
+  <string name="edit">Edit</string>
+  <string name="delete">Delete</string>
+  <string name="clear">Reset</string>
+
+  <!-- For the individual endeavors -->
+  <string name="start">Start / Stop:</string>
+  <string name="duration">Elapsed:</string>
+  <string name="untitled_endeavor">-New Endeavor-</string>
+
+  <!-- For tracking -->
+  <string name="tracked">Tracked</string>
+  <string name="untracked">Untracked</string>
+
+  <!-- For the edit popup -->
+  <string name="edit_endeavor_popup">Edit Endeavor</string>
+  <string name="edit_endeavor_ok">Make changes</string>
+  <string name="edit_endeavor_cancel">Cancel</string>
+
+  <string name="edit_endeavor_name">Display name:</string>
+  <string name="edit_endeavor_goal">Goal time:</string>
+  
+  <string name="edit_endeavor_hours">Hours</string>
+  <string name="edit_endeavor_minutes">Minutes</string>
+  <string name="edit_endeavor_seconds">Seconds</string>
+  
+  <string name="edit_endeavor_repeat">Periodic:</string>
+  <!-- for the stupid picker -->
+  <string name="increment">+</string>
+  <string name="decrement">-</string>
+
+  <!-- for reset -->
+  <string name="reset_verification">Reset all accumulated times to zero?</string>
+
+  <!-- for preferences -->
+  <string name="prefs_title">Aragorn preferences</string>
+  <string name="prefs_label_alarm">Goal completion</string>
+  <string name="prefs_label_autotoggle">Auto-Toggle idle</string>
+  <string name="prefs_label_verify_del">Deletion</string>
+  <string name="prefs_label_verify_reset">Reset counters</string>
+  <string name="prefs_label_autotoggle_setidle">Set idle endeavor</string>
+  <string name="prefs_label_tenths">High precision time</string>
+  <string name="prefs_label_export">Export preferences</string>
+  <string name="prefs_label_dnd">Do not disturb</string>
+  <string name="prefs_label_totalprogress">Progress bar title</string>
+  <string name="prefs_label_recent">Recent endeavors</string>
+  <string name="prefs_label_keyguard">Disable keyguard</string>
+  <string name="prefs_label_toggle">Quick toggle</string>
+  <string name="prefs_label_grace">Grace period</string>
+  <string name="prefs_label_upgrade">Manually update</string>
+  <string name="prefs_label_webpage">Instructions and help</string>
+
+  <string name="prefs_header_autotoggle_choice">Choose an Idle endeavor</string>
+  <string name="prefs_header_behaviour">Behaviour preferences</string>
+  <string name="prefs_header_appearance">Appearance preferences</string>
+  <string name="prefs_header_verify">Verification preferences</string>
+  <string name="prefs_header_export">Tracking preferences</string>
+  <string name="prefs_header_appearence">Appearance</string>
+  <string name="prefs_header_help">Help and update</string>
+
+  <string name="prefs_info_recent">Display first a list of this length of most recently active endeavors (Zero to disable)</string>
+  <string name="prefs_info_export">Control how Aragorn exports tracked data</string>
+  <string name="prefs_info_alarm">Issue a notification upon completion of goaled endeavors</string>
+  <string name="prefs_info_autotoggle">Switch to an Idle endeavor when the screen turns on.  Resume at screen off unless manually switched.</string>
+  <string name="prefs_info_verify_del">Whether Aragorn prompts on deletion</string>
+  <string name="prefs_info_verify_reset">Whether Aragorn prompts on reset requests</string>
+  <string name="prefs_info_tenths">Toggle high-resolution display (tenths of a second) on the chronometers</string>
+  <string name="prefs_info_dnd">Disable all signal reception while engaged in goaled endeavors (uses airplane mode)</string>
+  <string name="prefs_info_totalprogress">Show a progress bar in the title reflecting overall goal progress</string>
+  <string name="prefs_info_toggle">Punching the active endeavor will switch to the one previously active</string>
+  <string name="prefs_info_keyguard">Disable the keyguard (lockscreen) for faster access</string>
+  <string name="prefs_info_grace">Automatically transfer accumulated time (in seconds) less than this value to next selected endeavor</string> 
+  <string name="prefs_info_upgrade">Click to visit Aragorn\'s Marketplace page, where you can manually update Aragorn</string>
+  <string name="prefs_info_webpage">Click to visit Aragorn\'s webpage to view instructions and help</string>
+ 
+  <!-- export preferences -->
+  <string name="prefs_export_timepoint">Stamp with track</string>
+  <string name="prefs_info_export_timepoint">Record the time when Track is pressed, instead of the earliest present timestamp</string>
+
+  <string name="prefs_export_filename">Name with ids</string>
+  <string name="prefs_info_export_filename">Export data into filenames that are numbered, instead of labeled (useful for batch processing)</string>
+  
+  <string name="prefs_export_namecolumn">Include name</string>
+  <string name="prefs_export_info_namecolumn">Include a column with the Endeavor name (useful for batch processing)</string>
+
+  <string name="prefs_export_globalstats">Global statistics</string>
+  <string name="prefs_export_info_globalstats">Maintain an additional file with aggregate statistics</string>
+  
+  <!-- db strings-->
+  
+  <!-- include UI shit because grrrr -->
+  <string name="aragorn_table_create">CREATE TABLE endeavors(id INTEGER PRIMARY KEY, name TEXT NOT NULL, goal INTEGER, duration INTEGER, track BOOLEAN, position INTEGER, expanded BOOLEAN, active BOOLEAN, repeat BOOLEAN)</string>
+  <string name="stamps_table_create">CREATE TABLE stamps(id INTEGER PRIMARY KEY AUTOINCREMENT, endeavor_id INTEGER KEY, stamp TIMESTAMP DEFAULT (current_timestamp))</string>
+  <string name="state_table_create">CREATE TABLE state(id INTEGER PRIMARY KEY, cache TIMESTAMP, location INTEGER, previous INTEGER, active INTEGER)</string>
+  <string name="recents_table_create">CREATE TABLE recents(id INTEGER PRIMARY KEY, endeavor_id INTEGER KEY)</string>
+  <string name="db_fetch_endeavors">SELECT * FROM endeavors ORDER BY position ASC</string>
+  <!-- <string name="db_fetch_stamps">SELECT id, (strftime(\'%s\', stamp)*1000) AS stamp FROM stamps WHERE endeavor_id == ? ORDER BY id</string> -->
+  <string name="db_fetch_stamps">SELECT id, (strftime(\'%s\', stamp)*1000) AS stamp FROM stamps WHERE endeavor_id == ? ORDER BY stamp ASC</string>
+
+  <string name="aragorn_alter_repeat">ALTER TABLE endeavors ADD repeat BOOLEAN</string>
+  <string name="aragorn_alter_state">ALTER TABLE state ADD previous INTEGER</string>
+  <string name="aragorn_alter_state2">ALTER TABLE state ADD active INTEGER</string>
+  
+  <!-- the readme file for tracking -->
+  <string name="tracking_readme">Aragorn v1.0 - Tracked Data\n
+----------------------------\n
+These files were produced over time, each time you pressed Track on the main menu, from the endeavors you were toggled "Tracked" at that time.  Depending on options in preferences, the file names either reflect unique ids of each endeavor, or are the names of the endeavors themselves.  Additionally, there may be a global file for over all statistics.  Here is the format of each of the files (note that &lt;...&gt; reflects a column always present, [...] reflects a column that may optionally be present (see preferences).  Columns are TAB separated. \n
+\n
+Rows:\n
+* Individual Endeavors: &lt;unix milisecond timestamp&gt; &lt;endeavor duration&gt; &lt;goal duration&gt; [endeavor name]\n
+* Global statistics: &lt;total time tracked of UNGOALED endeavors&gt; &lt;total time tracked of GOALED endeavors&gt; &lt;total goal time&gt;</string>
+
+</resources>
