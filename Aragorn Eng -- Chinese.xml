@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
   <!-- for the manifest! -->
   <string name="app_name">"阿拉貢"</string>
   <string name="app_version_name">"1.1.3"</string>
-  <string name="webpage">"http://www.phys.hawaii.edu/〜kcroker /阿拉貢"</string>
+  <string name="webpage">"http://www.phys.hawaii.edu/〜kcroker/aragorn</string>
 
   <!-- For the primary menu -->
   <string name="menu_add">"增加"</string>
@@ -104,67 +105,20 @@
   <string name="prefs_export_globalstats">"全程序統計"</string>
   <string name="prefs_export_info_globalstats">"保持與匯總統計的其他文件"</string>
   
-  <!-- for various formatted messages -->
-  <string name="writingOut">"寫入文件..."</string>
-  <string name="yes">"是"</string>
-  <string name="no">"否"</string>
-  <string name="resetAborted">"復位中止"</string>
-  <string name="deleteAborted">"刪除被中止"</string>
-  <string name="questionMark">"\？"</string>
-  
-  <string name="default1">"學習科學"</string>
-  <string name="default2">"食物"</string>
-  <string name="default3">"上洗手間"</string>
-  <!-- the titles of the defaults are meant to be commands on basic usage -->
-  <string name="default4">"長按為了編輯"</string>
-  <string name="default5">"使用菜單添加"</string>
-  <string name="defaultsCreated">"空列表，默認創建了！"</string>
-  
-  <string name="neverPause">"阿拉貢不能停頓"</string>
-
-  <!-- for selecting new locations in the list, rearranging items in the list -->
-  <string name="repositionSelect">"選擇新的位置"</string>
-  <string name="repositionCancel">"重新定位取消了"</string>
-  <string name="repositionError1">"不能復位到一個最近的一節"</string>
-  <string name="transferSelect">"選擇收件者"</string>
-  <string name="transferError1">"沒時間轉移！"</string>
-  <string name="transferCancel">"調動取消了"</string>
-  <string name="transferError2">"不能重新分配成一個週期的下功夫"</string>
-  <string name="notImplemented">"尚未推出"</string>
-  <string name="transferSuccess">"再分配 %1$s"</string>
-
-  <string name="editErrorNoPeriod">"下功夫的週期必須有一個目標時間（一週期）"</string>
-  <string name="editCancel">"編輯取消"</string>
-
-  <string name="goalComplete">"%1$s 的目標成功了！"</string>
-  <string name="cycleComplete">"%1$2 個週期完成了"</string>
-  <string name="noteSelectNext">"點擊帶來阿拉貢到前景"</string>
-  
-  <!-- these are list section headings -->
-  <string name="headingRecents">"最近的下功夫"</string>
-  <string name="headingAll">"全部努力"</string>
-
-  <string name="detailUnstarted">"未開始的"</string>
-
-  <string name="qtSuccess">"快速切換到 $1%s 了"</string>
-  
-  <!-- read the preferences description of what I mean by gracing: like grace period -->
-  <string name="graceSuccess">"過去了 $1%d 秒了"</string>
-  
   <!-- db strings-->
   
   <!-- include UI shit because grrrr -->
-  <string name="aragorn_table_create">"創建表的努力（ID的INTEGER PRIMARY KEY條件，名稱“文本為NOT NULL，INTEGER的目標，持續整數，布爾軌道，INTEGER的位置，擴大布爾，積極布爾，布爾重複）"</string>
-  <string name="stamps_table_create">"創建表的郵票（ID整數的PRIMARY KEY AUTOINCREMENT的，endeavor_id整數鍵，郵票的TIMESTAMP默認（CURRENT_TIMESTAMP））"</string>
-  <string name="state_table_create">"創建表的狀態（ID的INTEGER PRIMARY KEY條件，緩存時間戳，INTEGER的位置，以前的整數，積極整數）"</string>
-  <string name="recents_table_create">"創作表recents，（ID的INTEGER PRIMARY KEY，endeavor_id整數鍵）"</string>
-  <string name="db_fetch_endeavors">"選擇從位置升序*努力令"</string>
+  <string name="aragorn_table_create">CREATE TABLE endeavors(id INTEGER PRIMARY KEY, name TEXT NOT NULL, goal INTEGER, duration INTEGER, track BOOLEAN, position INTEGER, expanded BOOLEAN, active BOOLEAN, repeat BOOLEAN)</string>
+  <string name="stamps_table_create">CREATE TABLE stamps(id INTEGER PRIMARY KEY AUTOINCREMENT, endeavor_id INTEGER KEY, stamp TIMESTAMP DEFAULT (current_timestamp))</string>
+  <string name="state_table_create">CREATE TABLE state(id INTEGER PRIMARY KEY, cache TIMESTAMP, location INTEGER, previous INTEGER, active INTEGER)</string>
+  <string name="recents_table_create">CREATE TABLE recents(id INTEGER PRIMARY KEY, endeavor_id INTEGER KEY)</string>
+  <string name="db_fetch_endeavors">SELECT * FROM endeavors ORDER BY position ASC</string>
   <!-- <string name="db_fetch_stamps">SELECT id, (strftime(\'%s\', stamp)*1000) AS stamp FROM stamps WHERE endeavor_id == ? ORDER BY id</string> -->
-  <string name="db_fetch_stamps">"SELECT ID，（的strftime（'％s'的郵票）* 1000）作為哪裡endeavor_id郵票郵票==？ ORDER BY郵票升序"</string>
+  <string name="db_fetch_stamps">SELECT id, (strftime(\'%s\', stamp)*1000) AS stamp FROM stamps WHERE endeavor_id == ? ORDER BY stamp ASC</string>
 
-  <string name="aragorn_alter_repeat">"ALTER TABLE的努力，添加重複布爾"</string>
-  <string name="aragorn_alter_state">"ALTER TABLE的狀態，添加前面的整數"</string>
-  <string name="aragorn_alter_state2">"ALTER TABLE的狀態加積極的整數"</string>
+  <string name="aragorn_alter_repeat">ALTER TABLE endeavors ADD repeat BOOLEAN</string>
+  <string name="aragorn_alter_state">ALTER TABLE state ADD previous INTEGER</string>
+  <string name="aragorn_alter_state2">ALTER TABLE state ADD active INTEGER</string>
   
   <!-- the readme file for tracking -->
   <string name="tracking_readme">"阿拉貢V1.0  - 記錄的數據\n---------------------------- \n 製作這些文件隨著時間的推移，每次你按下主單上的『下功夫』，從當時的切換 『追踪』 下功夫。根據首選項，每一個下功夫的文件名是自下功夫的ID或輸入的名稱
