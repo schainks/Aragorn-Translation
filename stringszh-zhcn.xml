@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <string name="app_name">阿拉贡</string>
+  <string name="app_version_name">1.1.3</string>
+  <string name="webpage">http://www.phys.hawaii.edu/〜kcroker/aragorn</string>
+
+  <!-​​- For the primary menu -->
+  <string name="menu_add">增加</string>
+  <string name="menu_options">设定</string>
+  <string name="menu_track">纪录尽力时间</string>
+  <string name="menu_pause">暂停</string>
+  <string name="menu_reset">重新所有计时间器</string>
+  <string name="menu_export">导出</string>
+
+  <!-​​- For the context menu -->
+  <string name="reposition">换单子位</string>
+  <string name="transfer">修改尽力时间</string>
+  <string name="graph">图形</string>
+  <string name="edit">修改</string>
+  <string name="d​​elete">删除</string>
+  <string name="clear">重新</string>
+
+  <!-​​- For the individual endeavors -->
+  <string name="start">开始/停止：</string>
+  <string name="d​​uration">经过时：</string>
+  <string name="untitled_endeavor">- 无名尽力-</string>
+
+  <!-​​- For tracking -->
+  <string name="tracked">追踪尽力</string>
+  <string name="untracked">没追踪尽力</string>
+
+  <!-​​- For the edit popup -->
+  <string name="edit_endeavor_popup">修改尽力任务</string>
+  <string name="edit_endeavor_ok">确认</string>
+  <string name="edit_endeavor_cancel">取消</string>
+
+  <string name="edit_endeavor_name">目标标题：</string>
+  <string name="edit_endeavor_goal">目标时间：</string>
+  
+  <string name="edit_endeavor_hours">小时</string>
+  <string name="edit_endeavor_minutes">分钟</string>
+  <string name="edit_endeavor_seconds">秒钟</string>
+  
+  <string name="edit_endeavor_repeat">周期：</string>
+  <!-​​- for the stupid picker -->
+  <string name="increment">+</string>
+  <string name="d​​ecrement">-</string>
+
+  <!-​​- for reset -->
+  <string name="reset_verification">忘记全部尽力时吗？ </string>
+
+  <!-​​- for preferences -->
+  <string name="prefs_title">阿拉贡设定</string>
+  <string name="prefs_label_alarm">目标完成</string>
+  <string name="prefs_label_autotoggle">自动切换闲置</string>
+  <string name="prefs_label_verify_del">删除</string>
+  <string name="prefs_label_verify_reset">重置计数器</string>
+  <string name="prefs_label_autotoggle_setidle">将闲置的尽力任务</string>
+  <string name="prefs_label_tenths">用高精度时间</string>
+  <string name="prefs_label_export">导出设定</string>
+  <string name="prefs_label_dnd">请勿打扰</string>
+  <string name="prefs_label_totalprogress">进度栏标题</string>
+  <string name="prefs_label_recent">最近的尽力任务</string>
+  <string name="prefs_label_keyguard">禁用自动键盘锁</string>
+  <string name="prefs_label_toggle">快速切换</string>
+  <string name="prefs_label_grace">宽限期</string>
+  <string name="prefs_label_upgrade">手动更新</string>
+  <string name="prefs_label_webpage">说明和帮助</string>
+
+  <string name="prefs_header_autotoggle_choice">选择一个空闲的尽力任务</string>
+  <string name="prefs_header_behaviour">行为设定</string>
+  <string name="prefs_header_appearance">外观设定</string>
+  <string name="prefs_header_verify">验证设定</string>
+  <string name="prefs_header_export">追踪设定</string>
+  <string name="prefs_header_appearence">外观</string>
+  <string name="prefs_header_help">帮助和更新</string>
+
+  <string name="prefs_info_recent">最近积极尽力任务单有什么长度（输入〇会停用）</string>
+  <string name="prefs_info_export">阿拉贡出口数据设定</string>
+  <string name="prefs_info_alarm">完成后，发出通知</string>
+  <string name="prefs_info_autotoggle">当屏幕打开时，切换到空闲的。屏幕关闭再继续，除非手动切换。 </string>
+  <string name="prefs_info_verify_del">是否提示删除</string>
+  <string name="prefs_info_verify_reset">阿拉贡提示复位请求</string>
+  <string name="prefs_info_tenths">高分辨率显示器（十分之一秒）的计时器</string>
+  <string name="prefs_info_dnd">中，禁用所有的信号接收（使用飞机模式）</string>
+  <string name="prefs_info_totalprogress">显示进度拦观察你的努力</string>
+  <string name="prefs_info_toggle">点击目的的，将切换到以前的尽力</string>
+  <string name="prefs_info_keyguard">禁用锁屏以提高访问速度</string>
+  <string name="prefs_info_grace">自动把这个值一下的累计时间（妙）传输加上下一个选的</string>
+  <string name="prefs_info_upgrade">点击访问阿拉贡的卖场页面，可以手动更新阿拉贡</string>
+  <string name="prefs_info_webpage">点击上阿拉贡的网页，查看说明和帮助</string>
+ 
+  <!-​​- export preferences -->
+  <string name="prefs_export_timepoint">以追踪盖章</string>
+  <string name="prefs_info_export_timepoint">按下按钮，纪录早的时间戳不如目前时间</string>
+
+  <string name="prefs_export_filename">与IDS名称</string>
+  <string name="prefs_info_export_filename">导出到用先后顺序编号数据的文件，而不是标记（用于批处理）</string>
+  
+  <string name="prefs_export_namecolumn">包括姓名</string>
+  <string name="prefs_export_info_namecolumn">包括一列的名称（用于批处理）</string>
+
+  <string name="prefs_export_globalstats">全程序统计</string>
+  <string name="prefs_export_info_globalstats">保持与汇总统计的其他文件</string>
+
+  <!-- db strings-->
+  
+  <!-- include UI shit because grrrr -->
+  <string name="aragorn_table_create">CREATE TABLE endeavors(id INTEGER PRIMARY KEY, name TEXT NOT NULL, goal INTEGER, duration INTEGER, track BOOLEAN, position INTEGER, expanded BOOLEAN, active BOOLEAN, repeat BOOLEAN)</string>
+  <string name="stamps_table_create">CREATE TABLE stamps(id INTEGER PRIMARY KEY AUTOINCREMENT, endeavor_id INTEGER KEY, stamp TIMESTAMP DEFAULT (current_timestamp))</string>
+  <string name="state_table_create">CREATE TABLE state(id INTEGER PRIMARY KEY, cache TIMESTAMP, location INTEGER, previous INTEGER, active INTEGER)</string>
+  <string name="recents_table_create">CREATE TABLE recents(id INTEGER PRIMARY KEY, endeavor_id INTEGER KEY)</string>
+  <string name="db_fetch_endeavors">SELECT * FROM endeavors ORDER BY position ASC</string>
+  <!-- <string name="db_fetch_stamps">SELECT id, (strftime(\'%s\', stamp)*1000) AS stamp FROM stamps WHERE endeavor_id == ? ORDER BY id</string> -->
+  <string name="db_fetch_stamps">SELECT id, (strftime(\'%s\', stamp)*1000) AS stamp FROM stamps WHERE endeavor_id == ? ORDER BY stamp ASC</string>
+
+  <string name="aragorn_alter_repeat">ALTER TABLE endeavors ADD repeat BOOLEAN</string>
+  <string name="aragorn_alter_state">ALTER TABLE state ADD previous INTEGER</string>
+  <string name="aragorn_alter_state2">ALTER TABLE state ADD active INTEGER</string>
+  
+  <!-- the readme file for tracking -->
+  <string name="tracking_readme">阿拉贡V1.0 - 记录的数据\n---------------------------- \n制作这些文件随着时间的推移，每次你按下主单上的『』，从当时的切换『追踪』 尽力。根据首选项，每一个尽力的文件名是自尽力的ID或输入的名称
+。此外，也有可能是一个全整体统计文件。此外，也有可能是一个全整体统计文件。每个文件的格式：（注：&lt;...&gt;代表了列始终存在，[...]代表一列可以选择（看看设定）。列都是制表符分隔. \n\n行：\n *个人的：&lt;UNIX 毫秒时戳&gt; &lt;尽力时间长短&gt; &lt;目的时间长短&gt; [尽力名称] \n *全整​​体统计：未目的尽力&gt; &lt;全部有目的尽力&gt;&lt;总数目标时间&gt;</string>
+</resources>
